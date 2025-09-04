@@ -203,12 +203,19 @@ class _SignupScreenState extends State<SignupScreen>
                             // Name Field
                             TextFormField(
                               controller: _nameController,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Full Name',
                                 prefixIcon: Icon(Icons.person_outline,
                                     color: AppTheme.primaryColor),
-                                border: OutlineInputBorder(
+                                labelStyle: const TextStyle(color: Colors.black54),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {
@@ -228,12 +235,19 @@ class _SignupScreenState extends State<SignupScreen>
                             TextFormField(
                               controller: _emailController,
                               keyboardType: TextInputType.emailAddress,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Email',
                                 prefixIcon: Icon(Icons.email_outlined,
                                     color: AppTheme.primaryColor),
-                                border: OutlineInputBorder(
+                                labelStyle: const TextStyle(color: Colors.black54),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {
@@ -254,6 +268,7 @@ class _SignupScreenState extends State<SignupScreen>
                             TextFormField(
                               controller: _passwordController,
                               obscureText: _obscurePassword,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Password',
                                 prefixIcon: Icon(Icons.lock_outline,
@@ -271,8 +286,14 @@ class _SignupScreenState extends State<SignupScreen>
                                     });
                                   },
                                 ),
-                                border: OutlineInputBorder(
+                                labelStyle: const TextStyle(color: Colors.black54),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {
@@ -292,6 +313,7 @@ class _SignupScreenState extends State<SignupScreen>
                             TextFormField(
                               controller: _confirmPasswordController,
                               obscureText: _obscureConfirmPassword,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Confirm Password',
                                 prefixIcon: Icon(Icons.lock_outline,
@@ -309,8 +331,14 @@ class _SignupScreenState extends State<SignupScreen>
                                     });
                                   },
                                 ),
-                                border: OutlineInputBorder(
+                                labelStyle: const TextStyle(color: Colors.black54),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {

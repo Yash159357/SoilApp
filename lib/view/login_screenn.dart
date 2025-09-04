@@ -188,12 +188,19 @@ class _LoginScreenState extends State<LoginScreen>
                             TextFormField(
                               controller: _emailController,
                               keyboardType: TextInputType.emailAddress,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Email',
+                                labelStyle: const TextStyle(color: Colors.black54),
                                 prefixIcon: Icon(Icons.email_outlined,
                                     color: AppTheme.primaryColor),
-                                border: OutlineInputBorder(
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {
@@ -214,8 +221,10 @@ class _LoginScreenState extends State<LoginScreen>
                             TextFormField(
                               controller: _passwordController,
                               obscureText: _obscurePassword,
+                              style: const TextStyle(color: Colors.black), 
                               decoration: InputDecoration(
                                 labelText: 'Password',
+                                labelStyle: const TextStyle(color: Colors.black54),
                                 prefixIcon: Icon(Icons.lock_outline,
                                     color: AppTheme.primaryColor),
                                 suffixIcon: IconButton(
@@ -231,8 +240,13 @@ class _LoginScreenState extends State<LoginScreen>
                                     });
                                   },
                                 ),
-                                border: OutlineInputBorder(
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(color: Colors.grey),
                                   borderRadius: BorderRadius.circular(12),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                  borderSide: BorderSide(color: AppTheme.primaryColor, width: 2),
                                 ),
                               ),
                               validator: (value) {
