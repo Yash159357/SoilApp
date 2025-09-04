@@ -1,16 +1,29 @@
-# soil_app
+# 🌱 SoilApp
 
-A new Flutter project.
+A demo **soil monitoring and analysis app** built with **Flutter** and **Firebase**.  
+It focuses on **mock data** for soil parameters and user profiles, making it perfect for showcasing app features without requiring real hardware sensors.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
+- 🔐 **Authentication** (Login, Signup, Password Reset, Email Verification)  
+- 👤 **User Profiles** with update and account deletion  
+- 📊 **Soil Readings Dashboard** powered by mock data  
+- 📬 Firebase-backed state management with **BLoC**  
+- 🔄 Real-time auth state updates  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+- [Flutter](https://flutter.dev/) – Frontend framework  
+- [Firebase](https://firebase.google.com/) – Authentication & backend services  
+- [BLoC](https://pub.dev/packages/flutter_bloc) – State management  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📦 Getting Started
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Yash159357/SoilApp.git
+   cd SoilApp
